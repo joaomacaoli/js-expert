@@ -1,0 +1,4 @@
+nvm use -> usa o node que está no arquivo .nvmrc
+npm init -y
+npm i -D sinon@15.0.1
+history
