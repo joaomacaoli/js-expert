@@ -1,0 +1,36 @@
+curl --version
+
+curl localhost:3000
+
+\       ---> caractere para fazer quebra de linha no terminal
+
+\
+  curl localhost:3000
+
+curl localhost:3000   --->  get
+curl -X POST localhost:3000
+curl -X PUT localhost:3000
+curl -X PATCH localhost:3000
+curl -X DELETE localhost:3000
+
+curl -i localhost:3000   --->  retorna algumas informações dentre elas o status code
+
+curl -X POST --data '{"username": "joaom","password":"1234"}' localhost:3000/login
+curl -X POST --data '{"username": "joaom","password":"123"}' localhost:3000/login
+
+curl -i -X POST --data '{"username": "joaom","password":"1234"}' localhost:3000/login
+curl -i -X POST --data '{"username": "joaom","password":"123"}' localhost:3000/login
+
+npm i -D mocha
+
+  "scripts": {
+    "test": "npx mocha -w src/*.test.js"
+  },
+
+npm t
+
+npm i -D supertest
+
+npm i -D nyc
+
+
